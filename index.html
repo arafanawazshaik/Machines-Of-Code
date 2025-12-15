@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machines of Code — A Living Notebook</title>
+  <meta name="description" content="A living notebook on patterns, information, structure, change, and limits. Math and Computer Science as philosophy and toolkit.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="nav-logo-stacked">
+      <span>MACHINES</span>
+      <span>OF</span>
+      <span>CODE</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links">
+      <li><a href="pages/start-here.html">Start Here</a></li>
+      <li><a href="pages/essays.html">Essays</a></li>
+      <li><a href="pages/problem-solving.html">Problem Solving</a></li>
+      <li><a href="pages/build-notes.html">Build Notes</a></li>
+      <li><a href="pages/about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <p class="hero-tagline">A Living Notebook</p>
+    <h1>Patterns, information, structure, change, <em>and limits.</em></h1>
+    <p class="hero-description">
+      Math and Computer Science—used both as philosophy and as a toolkit—to become sharper at problem-solving and stronger at building.
+    </p>
+    <div class="hero-buttons">
+      <a href="pages/start-here.html" class="btn btn-primary">Start Here</a>
+      <a href="pages/problem-solving.html" class="btn btn-secondary">Problem Breakdowns</a>
+    </div>
+  </section>
+
+  <!-- Pillars Section -->
+  <section id="pillars">
+    <p class="section-label">The Foundations</p>
+    <h2 class="section-title">Six pillars that structure everything</h2>
+    
+    <div class="pillars-grid">
+      <div class="pillar">
+        <p class="pillar-number">01</p>
+        <h3>Information</h3>
+        <p>The raw material of systems. What a system knows, stores, and transmits.</p>
+      </div>
+      
+      <div class="pillar">
+        <p class="pillar-number">02</p>
+        <h3>Structure</h3>
+        <p>How information becomes usable. The shape that makes knowledge navigable.</p>
+      </div>
+      
+      <div class="pillar">
+        <p class="pillar-number">03</p>
+        <h3>Relations</h3>
+        <p>What creates meaning. Connections, dependencies, the edges between nodes.</p>
+      </div>
+      
+      <div class="pillar">
+        <p class="pillar-number">04</p>
+        <h3>Change</h3>
+        <p>What computation models. State, transitions, dynamics, transformation over time.</p>
+      </div>
+      
+      <div class="pillar">
+        <p class="pillar-number">05</p>
+        <h3>Limits</h3>
+        <p>What keeps us humble. Time, memory, uncertainty—the constraints that shape good design.</p>
+      </div>
+      
+      <div class="pillar">
+        <p class="pillar-number">06</p>
+        <h3>Patterns</h3>
+        <p>The repeatable map. What recurs across algorithms, systems, learning, and nature.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Writing -->
+  <section id="featured">
+    <p class="section-label">Featured Series</p>
+    <h2 class="section-title">Start with these</h2>
+    
+    <div class="posts-list">
+      <a href="#" class="post-item">
+        <span class="post-title">From Intuition to Proof</span>
+        <span class="post-tag">Foundations</span>
+      </a>
+      <a href="#" class="post-item">
+        <span class="post-title">Limits as Design</span>
+        <span class="post-tag">Essays</span>
+      </a>
+      <a href="#" class="post-item">
+        <span class="post-title">Patterns in Systems</span>
+        <span class="post-tag">Problem Solving</span>
+      </a>
+      <a href="#" class="post-item">
+        <span class="post-title">The Problem-Solving Playbook</span>
+        <span class="post-tag">Method</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section id="about-preview">
+    <p class="section-label">The Mission</p>
+    <h2 class="section-title">Why this exists</h2>
+    
+    <div class="about-preview">
+      <p>
+        Machines of Code is a tribute to the craft: the patience of analysis, the discipline of proof, the creativity of design, and the courage to revise your thinking.
+      </p>
+      <p>
+        This site is for people who want to move from "knowing tools" to understanding foundations.
+      </p>
+      <a href="pages/about.html" class="btn btn-secondary">Read More</a>
+    </div>
+  </section>
+
+  <!-- Subscribe -->
+  <section class="subscribe-section" id="subscribe">
+    <p class="section-label">Stay Updated</p>
+    <h2 class="section-title">Join the journey</h2>
+    <p style="color: var(--text-secondary); max-width: 500px;">
+      Get new essays and breakdowns—clean thinking, practical outcomes. No spam, unsubscribe anytime.
+    </p>
+    <form class="subscribe-form" action="#" method="POST">
+      <input type="email" name="email" placeholder="your@email.com" required>
+      <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="footer-text">© 2025 Machines of Code</p>
+    <div class="footer-links">
+      <a href="pages/about.html">About</a>
+      <a href="#subscribe">Subscribe</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Scroll reveal
+    const revealElements = document.querySelectorAll('.pillar, .post-item');
+    
+    const revealOnScroll = () => {
+      revealElements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        
+        if (elementTop < windowHeight - 100) {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        }
+      });
+    };
+
+    // Initial state for scroll animations
+    revealElements.forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'all 0.6s ease';
+    });
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+
+</body>
+</html>
