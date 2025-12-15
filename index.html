@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machines of Code — Where Problems Become Solvable</title>
+  <meta name="description" content="A space to study problems, see patterns, and build solutions. Learn problem-solving through math and computer science.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="nav-logo-stacked">
+      <span>MACHINES</span>
+      <span>OF</span>
+      <span>CODE</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links">
+      <li><a href="start-here.html">Start Here</a></li>
+      <li><a href="essays.html">Essays</a></li>
+      <li><a href="problem-solving.html">Problem Solving</a></li>
+      <li><a href="build-notes.html">Build Notes</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <p class="hero-tagline">A Problem-Solving Lab</p>
+    <h1>Where problems <em>become solvable.</em></h1>
+    <p class="hero-description">
+      Learn to break down any problem — from any field — using the foundations of mathematics and computer science. Study patterns. Understand limits. Build real solutions.
+    </p>
+    <div class="hero-buttons">
+      <a href="start-here.html" class="btn btn-primary">Start Here</a>
+      <a href="problem-solving.html" class="btn btn-secondary">See Problems</a>
+    </div>
+  </section>
+
+  <!-- Pillars Section -->
+  <section id="pillars">
+    <p class="section-label">The Foundations</p>
+    <h2 class="section-title">Every problem can be studied through these lenses</h2>
+    
+    <div class="pillars-grid">
+      <div class="pillar">
+        <p class="pillar-number">01</p>
+        <h3>Information</h3>
+        <p>What do you know? What's missing? Every problem starts with understanding what information exists.</p>
+      </div>
+      
+      <div class="pillar">
+        <p class="pillar-number">02</p>
+        <h3>Structure</h3>
+        <p>How is it organized? Finding the right structure turns chaos into something workable.</p>
+      </div>
+      
+      <div class="pillar">
+        <p class="pillar-number">03</p>
+        <h3>Relations</h3>
+        <p>What connects to what? Dependencies, graphs, cause and effect — meaning lives in connections.</p>
+      </div>
+      
+      <div class="pillar">
+        <p class="pillar-number">04</p>
+        <h3>Change</h3>
+        <p>What transforms? Problems involve state, transitions, and dynamics over time.</p>
+      </div>
+      
+      <div class="pillar">
+        <p class="pillar-number">05</p>
+        <h3>Limits</h3>
+        <p>What's impossible? Constraints aren't obstacles — they're the rules that shape good solutions.</p>
+      </div>
+      
+      <div class="pillar">
+        <p class="pillar-number">06</p>
+        <h3>Patterns</h3>
+        <p>What repeats? The same structures appear across math, systems, nature, and everyday life.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who Is This For -->
+  <section id="who">
+    <p class="section-label">Who This Is For</p>
+    <h2 class="section-title">Anyone who wants to think better</h2>
+    
+    <div class="about-preview">
+      <p>
+        You don't need to be a programmer. You don't need a math degree. You just need curiosity about how things work — and a willingness to think carefully.
+      </p>
+      <p>
+        Whether you're a student, engineer, designer, researcher, or just someone who likes solving puzzles — this space is for you.
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured Writing -->
+  <section id="featured">
+    <p class="section-label">Start Learning</p>
+    <h2 class="section-title">Popular starting points</h2>
+    
+    <div class="posts-list">
+      <a href="#" class="post-item">
+        <span class="post-title">How to turn a vague problem into a clear model</span>
+        <span class="post-tag">Method</span>
+      </a>
+      <a href="#" class="post-item">
+        <span class="post-title">Limits are not obstacles — they are design rules</span>
+        <span class="post-tag">Essay</span>
+      </a>
+      <a href="#" class="post-item">
+        <span class="post-title">Patterns as compression: why learning is finding structure</span>
+        <span class="post-tag">Foundations</span>
+      </a>
+      <a href="#" class="post-item">
+        <span class="post-title">The problem-solving playbook</span>
+        <span class="post-tag">Guide</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Subscribe -->
+  <section class="subscribe-section" id="subscribe">
+    <p class="section-label">Join the Community</p>
+    <h2 class="section-title">Learn with us</h2>
+    <p style="color: var(--text-secondary); max-width: 500px;">
+      Get new essays, problem breakdowns, and methods — delivered to your inbox. Free, no spam, unsubscribe anytime.
+    </p>
+    <form class="subscribe-form" action="#" method="POST">
+      <input type="email" name="email" placeholder="your@email.com" required>
+      <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="footer-text">© 2025 Machines of Code</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="#subscribe">Subscribe</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Scroll reveal
+    const revealElements = document.querySelectorAll('.pillar, .post-item');
+    
+    const revealOnScroll = () => {
+      revealElements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        
+        if (elementTop < windowHeight - 100) {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        }
+      });
+    };
+
+    revealElements.forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'all 0.6s ease';
+    });
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Machines of Code</title>
+  <meta name="description" content="Machines of Code is a problem-solving lab for anyone who wants to learn how to break down problems and build solutions.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="nav-logo-stacked">
+      <span>MACHINES</span>
+      <span>OF</span>
+      <span>CODE</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links">
+      <li><a href="start-here.html">Start Here</a></li>
+      <li><a href="essays.html">Essays</a></li>
+      <li><a href="problem-solving.html">Problem Solving</a></li>
+      <li><a href="build-notes.html">Build Notes</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Content -->
+  <main class="about-page">
+    <div class="about-content">
+      <h1>About Machines of Code</h1>
+      
+      <p>
+        Machines of Code is a <strong>problem-solving lab</strong> — a space where anyone can learn to study problems, see patterns, and build real solutions.
+      </p>
+      
+      <p>
+        The core idea is simple: <em>every problem, from any field, can be understood through a small set of lenses</em> — information, structure, relations, change, limits, and patterns.
+      </p>
+      
+      <p>
+        These aren't just computer science concepts. They're the foundations of how anything becomes understandable.
+      </p>
+
+      <h2>Why this exists</h2>
+      
+      <p>
+        Most education teaches answers. But answers expire — methods don't.
+      </p>
+      
+      <p>
+        Machines of Code focuses on the <em>how</em>: How do you take a confusing situation and turn it into a clear problem? How do you find what matters and ignore what doesn't? How do you know when a solution is good enough?
+      </p>
+      
+      <p>
+        These skills apply everywhere — engineering, business, research, design, and daily life.
+      </p>
+
+      <h2>Who this is for</h2>
+      
+      <ul>
+        <li><strong>Students</strong> who want to think better, not just memorize</li>
+        <li><strong>Engineers</strong> who want deeper foundations</li>
+        <li><strong>Researchers</strong> looking for new ways to frame problems</li>
+        <li><strong>Designers</strong> who want to understand systems and constraints</li>
+        <li><strong>Anyone curious</strong> about how things work</li>
+      </ul>
+      
+      <p>
+        You don't need a math degree. You don't need to code. You just need the willingness to think carefully.
+      </p>
+
+      <h2>The six lenses</h2>
+      
+      <ul>
+        <li><strong>Information</strong> — What do you know? What's missing?</li>
+        <li><strong>Structure</strong> — How is it organized? What's the shape?</li>
+        <li><strong>Relations</strong> — What connects to what?</li>
+        <li><strong>Change</strong> — What transforms over time?</li>
+        <li><strong>Limits</strong> — What's impossible? What are the constraints?</li>
+        <li><strong>Patterns</strong> — What repeats across different domains?</li>
+      </ul>
+      
+      <p>
+        Every essay, problem breakdown, and build note on this site uses these lenses to make complex things understandable.
+      </p>
+
+      <h2>How learning works here</h2>
+      
+      <p>
+        Every topic follows the same arc:
+      </p>
+      
+      <p style="text-align: center; color: var(--text-primary); margin: 2rem 0; font-size: 1.1rem;">
+        <em>Question → Intuition → Model → Example → Build → Practice</em>
+      </p>
+      
+      <p>
+        You won't just read ideas — you'll work through problems and build things. That's how understanding actually sticks.
+      </p>
+
+      <h2>What you'll find here</h2>
+      
+      <ul>
+        <li><strong>Essays</strong> — Deep dives into foundational ideas</li>
+        <li><strong>Problem Breakdowns</strong> — Step-by-step analysis of real problems</li>
+        <li><strong>Build Notes</strong> — Small projects that turn ideas into code</li>
+        <li><strong>Methods</strong> — Frameworks you can apply anywhere</li>
+        <li><strong>Exercises</strong> — Practice problems to build intuition</li>
+      </ul>
+
+      <h2>Join the community</h2>
+      
+      <p>
+        Machines of Code is growing. Subscribe to get new essays and problem breakdowns — and become part of a community that takes thinking seriously.
+      </p>
+      
+      <a href="index.html#subscribe" class="btn btn-secondary" style="margin-top: 2rem;">Subscribe for Free</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p class="footer-text">© 2025 Machines of Code</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="index.html#subscribe">Subscribe</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
